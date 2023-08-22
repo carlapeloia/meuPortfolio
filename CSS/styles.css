@@ -1,0 +1,247 @@
+:root {
+  --primary-color: #c916ab;
+  --secondary-color: #95989a;
+  --color-white: #FFF;
+  --color-black: #000;
+  --text-tertiary-color: #5d5d5d;
+  --color-light: #F0EEEE;
+  --color-dark:#666363;
+  --border-primary-color: rgba(201, 22, 171, 0.11);
+  --gradient-color-1: rgba(0, 0, 0, 0.9);
+  --gradient-color-2: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.link-git {
+  text-align: center;
+}
+
+.link-git p {
+  margin-top: 10px;
+}
+
+#myHeader {
+  background: linear-gradient(var(--gradient-color-1), var(--gradient-color-2)),
+    url("../IMAGES/backImg.PNG");
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  padding: 4rem;
+  gap: 2rem;
+  justify-content: space-around;
+  color: var(--color-white);
+}
+
+#myHeader, .container, .cards, .align-start, .align-end, footer, .align{
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  margin-top: 0.5rem;
+}
+
+.container img {
+  border-radius: 6px;
+  opacity: 0.6;
+}
+
+.dark {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.social {
+  text-align: center;
+}
+
+#presentation h1 {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.i_space {
+  margin: 12px;
+}
+
+.ocupation {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.myPhoto .myImg {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../IMAGES/photo.jpg");
+}
+
+.myPhoto .myImg, #icon img, .align-end img {
+  display: block;
+}
+
+.light {
+  background-color: var(--color-light);
+}
+
+.dark {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+}
+
+.dark h2 {
+  text-align: center;
+}
+
+.dark h3, .dark span {
+  color: var(--color-black);
+  font-weight: bolder;
+}
+
+.light, .dark {
+  width: 100%;
+  padding: 4rem;
+}
+
+.container {
+  width: 80%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid var(--secondary-color);
+  border-radius: 6px;
+  padding: 14px;
+}
+
+#container-title {
+  margin-top: 1rem;
+}
+
+.cards {
+  width: 80%;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.btn {
+  margin-top: 1rem;
+}
+
+.project-description {
+  height: 4rem;
+  margin-top: 1.5rem;
+}
+
+.social {
+  background-color: transparent;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  }
+
+.social {
+  width: 100%;
+}
+
+.social a, .social2 a, .socialFooter a {
+  text-decoration: none;
+}
+
+.social {
+  width: 80%;
+}
+
+.enfasis {
+  font-weight: 600;
+}
+
+.social i, .socialFooter i {
+  color: var(--color-white);
+  font-size: 2rem;
+}
+
+.social i:hover, .socialFooter i:hover, .social2 a:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.align-start, .align-end {
+  gap: 4rem;
+}
+
+.align-end {
+  text-align: end;
+  margin-top: 4rem;
+}
+
+footer {
+  justify-content: space-around;
+  background-color: var(--color-dark);
+  height: 3rem;
+}
+
+.align-center {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.social2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid var(--text-tertiary-color);
+  border-radius: 5px;
+  width: 80%;
+  text-align: center;
+  padding: 1rem;
+}
+
+.social2 p {
+  margin: 0;
+}
+
+.social2 a {
+  cursor: pointer;
+  color: var(--text-tertiary-color);
+}
+
+
+@media(max-width: 912px) {
+  #myHeader {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .myPhoto .myImg {
+    display: none;
+  }
+}
+
+@media(max-width: 600px) {
+  #icon img, .align-end img{
+    display: none;
+  }
+
+  .align-start, .align-end {
+    text-align: center;
+  }
+
+  footer {
+    height: auto;
+    flex-direction: column;
+    padding: 4px;
+    gap: 4px;
+  }
+
+}
